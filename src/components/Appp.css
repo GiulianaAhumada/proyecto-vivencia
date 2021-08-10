@@ -48,3 +48,19 @@
 .secundario {
   margin: 0 auto;
 }
+
+.body-modal{
+  width: 450px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botones{
+  margin: 20px 20px 20px 40px;
+  padding: 5px;
+  border-radius: 4px;
+}
+

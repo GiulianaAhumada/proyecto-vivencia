@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+.modal-nav{
+    background: #0000009d;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+}
+.modal-open{
+    display: flex;
+}
+
+
+.modal-nav_style{
+    background: #ffffff;
+    border-radius: 5px;
+    z-index: 300;
+    padding: 10px;
+    width: 450px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items_nav_modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+
+
+.boton-modal_nav{
+    font-family: 'Play', sans-serif;
+    margin-left:70px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.boton-modal_nav:active{
+    background: #969696;
+}
+
+.boton-close-nav{
+    padding: 0 5px;
+    align-self: flex-end;
+    border-radius: 5px;
+}

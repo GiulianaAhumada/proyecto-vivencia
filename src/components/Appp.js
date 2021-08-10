@@ -1,7 +1,9 @@
 import React from 'react';
 import './Appp.css';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label} from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as web3 from 'web3';
+import Cuenta from './BotonesWeb3';
 
 class Appp extends React.Component{
   state={
@@ -24,28 +26,17 @@ class Appp extends React.Component{
       <>
       <div className="principal">
         <div className="secundario">
-      <Button color="btn btn-dark" onClick={this.abrirModal}>Iniciar sesion</Button>
 
       </div></div>
 
       <Modal isOpen={this.state.abierto} style={modalStyles}>
         <ModalHeader>
-          Iniciar Sesión
+          Conecta tus Billeteras
         </ModalHeader>
         <ModalBody>
-          <FormGroup>
-            <Label for="usuario">Usuario</Label>
-            <Input type="text" id="usuario"/> 
-          </FormGroup>
-          <FormGroup>
-            <Label for="password">Contraseña</Label>
-            <Input type="text" id="password"/> 
-          </FormGroup>
         </ModalBody>
-
         <ModalFooter>
-            <Button color="primary">Iniciar Sesión</Button>
-            <Button color="secondary" onClick={this.abrirModal}>Cerrar</Button>
+          <Button color="secondary" onClick={this.abrirModal}>Cerrar</Button>
         </ModalFooter>
       </Modal>
       </>

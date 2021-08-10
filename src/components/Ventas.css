@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+.ventas{
+    background: #000000;
+    margin: 20px 130px 120px 130px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.ventas h1{
+    margin: 30px 100px;
+}
+.ventas img{
+    width: 250px;
+}
+
+.item-ventas{
+    background: #ebebeb;
+    border:1px solid #ffffff;
+    border-radius: 5px;
+    color: #494949;
+    margin: 20px 20px 80px 20px;
+    width: 300px;
+    height: 240px;
+    transition: .3s;
+    user-select: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    font-size: 13px;
+}
+.item-ventas:hover{
+    background: #a7a7a7;
+    color: #000000;
+    height: 280px;
+    box-shadow: 1px 4px 18px 1px rgba(150, 150, 150, 0.726);
+    margin: 20px 20px 30px 20px;
+}
+.item-ventas h6{
+    color: #000000;
+    display: none;
+}
+.item-ventas:hover h6{
+    display: inline-block;
+}
+.item-ventas em{
+    font-size: 17px;
+}
+.item-ventas:hover em{
+    text-shadow:1px 1px 2px #494949;
+}
+
+/* estilos modal */
+
+.modal-ventas{
+    background: #000000af;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Play', sans-serif;
+}
+
+.modal-open{
+    display: flex;
+}
+
+.modal_style{
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px 5px 5px 15px;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.modal_style img{
+    width: 400px;
+}
+
+.caracteristicas{
+    width: 300px;
+    text-align: center;
+}
+.caracteristicas h2{
+    font-size: 35px;
+    color: #000000;
+}
+.caracteristicas p{
+    font-size: 55px;
+    color: #494949;
+}
+
+/* Boton de cuenta */
+
+.sendEthButton, .showAccount{
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 10px 10px;
+    align-self: center;
+}
+.sendEthButton, .showAccount button:active{
+    background: #dbdbdb;
+}
+
+.boton-close{
+    padding: 0 5px;
+    align-self: flex-start;
+    border-radius: 5px;
+}
+
